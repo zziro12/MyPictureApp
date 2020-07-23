@@ -22,24 +22,19 @@ class ViewController: UIViewController {
     }
 
     @IBAction func Button(_ sender: Any) {
-        print("test")
         let message = "영화제목은 \(movieTitle) 입니다."
-        
         let alert = UIAlertController(title: "Hello", message: message, preferredStyle: .alert)
-        
-        let action = UIAlertAction(title: "OK", style: .default, handler: nil)
+        let action = UIAlertAction(title: "OK", style: .default, handler: { action in
+            self.refresh()
+        })
         alert.addAction(action)
         present(alert, animated: true, completion: nil)
-        
-        refresh()
-        //이건 버튼을 누를때마다 바뀐값의 영화제목을 보여주는 코드
-        
     }
     
     func refresh(){
         let randomValue = arc4random_uniform(10000) + 1
         movieTitle = String(randomValue)
-        movieTitleLabel.text = "₩ \(movieTitle)"
+        movieTitleLabel.text = "\(movieTitle)"
     }
 }
 
