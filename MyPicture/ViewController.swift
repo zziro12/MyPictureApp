@@ -10,7 +10,7 @@ import UIKit
 
 class ViewController: UIViewController {
 
-    var movieTitle = "Zootopia";
+    var movieScore = "";
     
     @IBOutlet weak var movieTitleLabel: UILabel!
     
@@ -18,11 +18,11 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         
         refresh()
-        //로드 될때 영화 제목을 보여주는거고
+        //로드 될때 영화점수를 보여줌
     }
 
     @IBAction func Button(_ sender: Any) {
-        let message = "영화제목은 \(movieTitle) 입니다."
+        let message = "영화의 점수는 \(movieScore) 입니다."
         let alert = UIAlertController(title: "Hello", message: message, preferredStyle: .alert)
         let action = UIAlertAction(title: "OK", style: .default, handler: { action in
             self.refresh()
@@ -33,8 +33,8 @@ class ViewController: UIViewController {
     
     func refresh(){
         let randomValue = arc4random_uniform(10000) + 1
-        movieTitle = String(randomValue)
-        movieTitleLabel.text = "\(movieTitle)"
+        movieScore = String(randomValue)
+        movieTitleLabel.text = "is \(movieScore) point"
     }
 }
 

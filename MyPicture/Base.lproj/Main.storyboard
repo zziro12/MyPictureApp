@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="16096" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina5_9" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,12 +12,15 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="MyPicture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="812"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-4W-SH2">
-                                <rect key="frame" x="141" y="681" width="92" height="44"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Wt-4W-SH2">
+                                <rect key="frame" x="152" y="633" width="110" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="50" id="g79-Xp-Zvs"/>
+                                    <constraint firstAttribute="width" constant="110" id="jEB-SY-Hw6"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="26"/>
                                 <state key="normal" title="Refresh">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -27,26 +30,45 @@
                                     <action selector="Button:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vM3-hN-auf"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="This Movie is.." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-wf-1J8">
-                                <rect key="frame" x="91" y="95" width="193" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="zootopia" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-Ou-Kan">
+                                <rect key="frame" x="47" y="138" width="320" height="320"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="320" id="2Wu-Wv-VY4"/>
+                                    <constraint firstAttribute="height" constant="320" id="foD-9k-DiA"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="is 10000 point" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-aF-5b8">
+                                <rect key="frame" x="105.66666666666669" y="535" width="203" height="36"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="203" id="iEf-PF-xXd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="zootopia" translatesAutoresizingMaskIntoConstraints="NO" id="P7D-Ou-Kan">
-                                <rect key="frame" x="27" y="182" width="320" height="320"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="MovieTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhn-aF-5b8">
-                                <rect key="frame" x="98" y="577" width="179" height="36"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="This Movie" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Pxx-wf-1J8">
+                                <rect key="frame" x="133.66666666666669" y="51" width="146.66666666666669" height="40"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="146.66999999999999" id="l9v-m4-nQi"/>
+                                    <constraint firstAttribute="height" constant="40" id="vKx-Fg-qKx"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="P7D-Ou-Kan" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="57n-HJ-rE2"/>
+                            <constraint firstItem="Pxx-wf-1J8" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="D52-Xc-Bbi"/>
+                            <constraint firstItem="P7D-Ou-Kan" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="138" id="KNa-vW-bAa"/>
+                            <constraint firstItem="Pxx-wf-1J8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="VrM-BX-929"/>
+                            <constraint firstItem="7Wt-4W-SH2" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="XYE-Wd-fJd"/>
+                            <constraint firstItem="Pxx-wf-1J8" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="51" id="Yde-AV-0rX"/>
+                            <constraint firstItem="jhn-aF-5b8" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="vcw-ZZ-GyQ"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="7Wt-4W-SH2" secondAttribute="bottom" constant="53" id="z1k-xp-xXQ"/>
+                            <constraint firstItem="7Wt-4W-SH2" firstAttribute="top" secondItem="jhn-aF-5b8" secondAttribute="bottom" constant="62" id="zIE-JD-tdX"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>

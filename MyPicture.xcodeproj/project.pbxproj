@@ -16,7 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		E284A62024C6ECD00083F4B6 /* MyPicture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MyPicture.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E284A62024C6ECD00083F4B6 /* Zootopia.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Zootopia.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E284A62324C6ECD00083F4B6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E284A62524C6ECD00083F4B6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		E284A62724C6ECD00083F4B6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -48,7 +48,7 @@
 		E284A62124C6ECD00083F4B6 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				E284A62024C6ECD00083F4B6 /* MyPicture.app */,
+				E284A62024C6ECD00083F4B6 /* Zootopia.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -84,7 +84,7 @@
 			);
 			name = MyPicture;
 			productName = MyPicture;
-			productReference = E284A62024C6ECD00083F4B6 /* MyPicture.app */;
+			productReference = E284A62024C6ECD00083F4B6 /* Zootopia.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -291,7 +291,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinho.MyPicture;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zootopia;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -308,7 +308,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.jinho.MyPicture;
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Zootopia;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
